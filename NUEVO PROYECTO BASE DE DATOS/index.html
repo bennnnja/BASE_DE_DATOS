@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<?php include_once 'conexion.php'; ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-RIKO</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="LOGO K-RIKO.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>  
+        </div>
+        
+        <div class="container__menu">
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selected"></a></li>
+                        <li><a href="#">Iniciar Sesión</a>
+                            <ul>
+                                <li><a href="IniciarSesionAdmin.html">Administrador</a></li>
+                                <li><a href="IniciarSesionCliente.html">Cliente</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <tr>
+        <?php echo $tableContent; ?>
+    </tr>
+
+    <main>
+        <article>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Pagina diseñada por Benjamin Rojas, Jose Peña y Francisco Meza</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

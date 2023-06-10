@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-RIKO</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="LOGO K-RIKO.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>  
+        </div>
+        
+        <div class="container__menu">
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selected"></a></li>
+                        <li><a href="#">Iniciar Sesión</a>
+                            <ul>
+                                <li><a href="IniciarSesionAdmin.html">Administrador</a></li>
+                                <li><a href="IniciarSesionCliente.html">Cliente</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <article>
+            <section class="form-register">
+                <h4>Registrarse</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+                <input class="controls" type="text" name="nombreUsu" id="nombreUsu" placeholder="Ingrese un Nombre de Usuario">
+                <input class="botons" type="submit" value="Registrarse">
+                <p><a href="IniciarSesion.html">¿Ya tienes cuenta?</a></p>
+              </section>
+        </article>    
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Pagina diseñada por Benjamin Rojas, Jose Peña y Francisco Meza</p>
+        </div>
+
+    </footer>
+</body>
+</html>
