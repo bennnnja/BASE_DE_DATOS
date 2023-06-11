@@ -8,6 +8,9 @@
     text-decoration: none;
 }
 
+body{
+    background-color:#907444;
+}
 header{
     width: 100%;
     position: fixed ;
@@ -171,7 +174,7 @@ nav ul li ul li a:hover{
 }
 
 main{
-    background: #f0f0f0;
+    background-color: #907444;
     padding: 40px 20px;
     margin-top: 60px;
 }
@@ -180,14 +183,15 @@ article{
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
-    background: #fff;
+    background-color: #907444;
+    background: #907444;
 }
 
 
 /*FORMULARIO*/
 
 .form-register {
-    width: 400px;
+    width: 700px;
     background: #6b5631;
     padding: 30px;
     margin: auto;
@@ -240,7 +244,34 @@ article{
     color: white;
     margin: 16px 0;
     font-size: 16px;
-  }
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.form-register ul a  {
+    display: block;
+    width: 30%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px 70px;
+    background-color: #907444;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    height: 55px;
+}
+
+.form-register ul a:hover{
+    background-color: transparent;
+    border: 2px solid #907444;
+    color: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
 .mision {
     padding-top: 10px;
     padding-right: 30px;
@@ -271,25 +302,96 @@ article{
     margin-bottom: 20px;
   }
 
-.form-register ul a  {
+
+table, th, td{
+border:1px solid #907444;
+}
+
+
+/*FORMULARIO EDITAR*/
+
+.form-edit {
+    width: 700px;
+    background: #6b5631;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-edit h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #6b5631;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #907444;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-edit p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-edit a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-edit a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-edit .botons {
+    width: 100%;
+    background: #907444;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.form-edit ul a  {
     display: block;
-    width: 50px;
+    width: 30%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
-    border-radius: 10px;
-    margin: 0px 100px;
+    border-radius: 20px;
+    margin: auto;
     padding: 10px 70px;
     background-color: #907444;
     color: #fff;
-    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    height: 55px;
 }
 
-.form-register ul a:hover{
+.form-edit ul a:hover{
     background-color: transparent;
     border: 2px solid #907444;
     color: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
 }
-
-table, th, td{
-border:1px solid white;
+p{
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif ;
 }
