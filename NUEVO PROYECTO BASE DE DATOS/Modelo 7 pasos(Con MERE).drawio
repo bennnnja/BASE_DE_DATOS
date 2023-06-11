@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-06-11T23:01:02.834Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="uC8K2EOUCwxG6z5RSLik" version="21.3.8" type="device">
+  <diagram name="Página-1" id="ZQH5fN0ECEUizaC5v_aP">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-1" value="Fabrica" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-2" value="Sucursal" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-3" value="Personas" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-4" value="Orden de compra" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-5" value="Pedido" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="330" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-6" value="Proveedor" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-7" value="Ingrediente" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-8" value="Receta" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-9" value="Producto" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="km2PGVgDkL-i9_Mq7hTF-10" value="Vehiculo" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="330" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
