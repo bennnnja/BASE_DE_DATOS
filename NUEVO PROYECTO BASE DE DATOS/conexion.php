@@ -1,9 +1,9 @@
 <?php
-$host = 'localhost'; // Normalmente es localhost
+$host = 'magallanes.inf.unap.cl'; // Normalmente es localhost
 $port = '5432'; // Por defecto es 5432
 $dbname = 'sistemalogin';
-$user = 'postgres';
-$password = 'password';
+$user = 'brojas';
+$password = 'Gt95x5cDq1';
 //$nombre = $_POST['nombre'];
 //$edad = $_POST['edad'];
 //$correo = $_POST['correo'];
