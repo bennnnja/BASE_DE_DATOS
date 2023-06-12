@@ -1,31 +1,35 @@
 <?php
+
 $host = 'magallanes.inf.unap.cl'; // Normalmente es localhost
 $port = '5432'; // Por defecto es 5432
-$dbname = 'sistemalogin';
+$dbname = 'brojas';
 $user = 'brojas';
 $password = 'Gt95x5cDq1';
-//$nombre = $_POST['nombre'];
-//$edad = $_POST['edad'];
-//$correo = $_POST['correo'];
+
+// Obtener los valores enviados por el formulario
+$usuario = $_POST['usuario'];
+$contrasena = $_POST['contrasena'];
+
 // Establecer conexión
-$dsn =
-"pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$passw
-ord";
 try {
-$conexion = new PDO($dsn);
-// Consulta a una tabla específica
-//$sql = "INSERT INTO Persona () values() ";
-$sql = "SELECT * FROM usuario";
-$stmt = $conexion->query($sql);
-// Generar el contenido de la tabla HTML
-$tableContent = '';
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-$tableContent .= "<tr>";
-$tableContent .= "<td>" . $row['nombre_usuario'] . "</td>";
-$tableContent .= "<td>" . $row['email_usuario'] . "</td>";
-$tableContent .= "</tr>";
-}
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";
+    $conexion = new PDO($dsn);
+
+    // Consulta para verificar las credenciales de inicio de sesión
+    $sql = "SELECT * FROM cuenta WHERE cliente_rut = :usuario AND contrasenia = :contrasena";
+    $stmt = $conexion->prepare($sql);
+    $stmt->bindParam(':usuario', $usuario);
+    $stmt->bindParam(':contrasena', $contrasena);
+    $stmt->execute();
+
+    // Verificar si se encontró un usuario con las credenciales proporcionadas
+    if ($stmt->rowCount() > 0) {
+        header('Location: inicio.html');
+            exit();
+    } else {
+        echo "Credenciales inválidas";
+    }
 } catch (PDOException $e) {
-echo "Error al conectarse a la base de datos: " . $e-
->getMessage();
+    echo "Error al conectarse a la base de datos: " . $e->getMessage();
 }
+?>
