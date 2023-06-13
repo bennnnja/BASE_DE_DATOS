@@ -171,10 +171,11 @@ nav ul li ul li a:hover{
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
+    font-size: 20px;
 }
 
 main{
-    background-color: #907444;
+    background-color: #fff;
     padding: 40px 20px;
     margin-top: 60px;
 }
@@ -183,8 +184,13 @@ article{
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
-    background-color: #907444;
-    background: #907444;
+    background-color: #fff;
+    background: #fff;
+}
+.Foto_menu img{
+  width: 600px;
+  display: block;
+  margin: 0 auto
 }
 
 

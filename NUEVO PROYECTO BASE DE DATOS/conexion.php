@@ -7,7 +7,7 @@ $user = 'brojas';
 $password = 'Gt95x5cDq1';
 
 // Obtener los valores enviados por el formulario
-$usuario = $_POST['usuario'];
+$rut = $_POST['rut'];
 $contrasena = $_POST['contrasena'];
 
 // Establecer conexión
@@ -16,16 +16,16 @@ try {
     $conexion = new PDO($dsn);
 
     // Consulta para verificar las credenciales de inicio de sesión
-    $sql = "SELECT * FROM cuenta WHERE cliente_rut = :usuario AND contrasenia = :contrasena";
+    $sql = "SELECT * FROM empleado WHERE rut = :rut AND contrasena = :contrasena";
     $stmt = $conexion->prepare($sql);
-    $stmt->bindParam(':usuario', $usuario);
+    $stmt->bindParam(':rut', $rut);
     $stmt->bindParam(':contrasena', $contrasena);
     $stmt->execute();
 
     // Verificar si se encontró un usuario con las credenciales proporcionadas
     if ($stmt->rowCount() > 0) {
-        header('Location: inicio.html');
-            exit();
+        header('Location: InicioAdmin.html');
+        exit();
     } else {
         echo "Credenciales inválidas";
     }
