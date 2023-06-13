@@ -27,8 +27,7 @@
                         <li><a href="index.html" id="selected"></a></li>
                         <li><a href="#">Iniciar Sesión</a>
                             <ul>
-                                <li><a href="IniciarSesionAdmin.html">Administrador</a></li>
-                                <li><a href="IniciarSesionCliente.html">Cliente</a></li>
+                                <li><a href="IniciarSesionAdmin.html">Inicio Sesion</a></li>
                             </ul>
                         </li>    
                         <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
@@ -43,13 +42,15 @@
         <article>
             <section class="form-register">
                 <h4>Registrarse</h4>
-                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                <input class="controls" type="text" name="nombreUsu" id="nombreUsu" placeholder="Ingrese un Nombre de Usuario">
-                    <ul><a href="index.html">Registrarse</a></ul>
-                <p><a href="IniciarSesion.html">¿Ya tienes cuenta?</a></p>
+                <form action="conexion.php" method="post">
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+                    <input class="controls" type="text" name="rut" id="rut" placeholder="Ingrese su RUT">
+                    <input type="submit" value="Registrarse">
+                    <p><a href="IniciarSesion.html">¿Ya tienes cuenta?</a></p>
+                </form>        
               </section>
         </article>    
     </main>
